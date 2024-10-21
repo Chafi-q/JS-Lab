@@ -1,2 +1,8 @@
 data
 node_modules
+docker-compose.yml
+Dockerfile
+.dockerignore
+script.html
+script.js
+test.js
