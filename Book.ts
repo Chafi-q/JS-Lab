@@ -1,25 +1,25 @@
-export interface Ibook{
+export interface Book{
     title:string;
     author:string;
-    number_of_pages:string;
+    number_of_pages:number;
     price:number;
-    status:status;
+    status:Status;
     number_readed_page:number;
-    format:format;
+    format:Format;
     suggested_by:string;
     finished:boolean
     
 }
 
 
-enum format {
+export enum Format {
     PRINT="print",
     PDF="pdf",
     EBOOK="Ebook",
     AUDIOBOOK="AudioBook"
 }
 
-enum status {
+export enum Status {
     READ="Read",
     RE_READ="Re-read",
     CURRENT="Currently reading",
