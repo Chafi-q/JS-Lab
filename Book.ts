@@ -6,7 +6,7 @@ export interface Book{
     status:Status;
     number_readed_page:number;
     format:Format;
-    suggested_by:string;
+    suggested_by?:string;
     finished:boolean
     
 }
@@ -20,8 +20,8 @@ export enum Format {
 }
 
 export enum Status {
-    READ="Read",
-    RE_READ="Re-read",
+    READED="Read",
+    RE_READED="Re-read",
     CURRENT="Currently reading",
     UNREAD="Unread",
     WANTED="Want to read"

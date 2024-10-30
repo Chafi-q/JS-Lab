@@ -12,7 +12,7 @@ export class BookClass {
        title:string,author:string,
        number_of_pages:number,price:number,
        status:Status,number_readed_page:number,
-       format:Format,suggested_by:string
+       format:Format,suggested_by?:string
     ){
          
         if(number_readed_page<number_of_pages){
