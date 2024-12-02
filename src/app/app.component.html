@@ -1,0 +1,54 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+
+
+<main class="main">
+  <div class="overlay"></div>
+
+  <div class="container">
+    <div class="table-container">
+      <h3 class="text-center mb-4">Books List</h3>
+      <table class="table table-striped table-hover">
+        <div *ngIf="books.length==0" style="margin-left: 4px; margin-top: 4px;">
+          No data
+        </div>
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col"></th>
+            <th scope="col">Is Read</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of books; let i = index">
+            <td>{{item.name}}</td>
+            <td>
+
+              
+              {{item.isRead}}</td>
+            <td><input type="checkbox" [(ngModel)]="item.isRead"></td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</main>
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+
+<router-outlet />
